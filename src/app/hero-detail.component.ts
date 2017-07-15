@@ -13,6 +13,8 @@ import 'rxjs/add/operator/switchMap';
 	templateUrl: './hero-detail.component.html'
 })
 export class HeroDetailComponent implements OnInit {
+	// The @Input decorator is necessary to allow the hero to be provided to the component as a parameter in the markup:
+	// <hero-detail [hero]="parameter"></hero-detail>
 	@Input() hero: Hero;
 
 	constructor(

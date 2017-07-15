@@ -8,3 +8,4 @@ NgModules: https://angular.io/guide/ngmodule
 Dependency injection: https://angular.io/guide/dependency-injection
 Lifecycle hooks: https://angular.io/guide/lifecycle-hooks
 Router: https://angular.io/guide/router
+Pipes: https://angular.io/guide/pipes
