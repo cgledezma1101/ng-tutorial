@@ -49,4 +49,13 @@ export class HeroService {
 			.then(response => response.json().data as Hero)
 			.catch(this.handleError);
 	}
+
+	delete(hero: Hero): Promise<void> {
+		const url = `${this.heroesUrl}/${hero.id}`;
+		return this.http
+			.delete(url, { headers: this.headers })
+			.toPromise()
+			.then(() => null)
+			.catch(this.handleError);
+	}
 }
